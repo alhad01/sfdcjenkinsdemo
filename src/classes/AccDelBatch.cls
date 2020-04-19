@@ -17,6 +17,6 @@ global class AccDelBatch implements database.Batchable<sObject>
     
     global void finish(Database.BatchableContext BC)
     {
-        //Comment on 22 Oct 2019
+        //Comment on 22 Oct 2019 Git Jenkins Demo
     }
 }
