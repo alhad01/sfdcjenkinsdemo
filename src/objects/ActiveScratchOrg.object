@@ -152,7 +152,7 @@
     <fields>
         <fullName>SignupUsername</fullName>
     </fields>
-    <listViews>
+    <!--<listViews>
         <fullName>All_Active_Scratch_Orgs</fullName>
         <filterScope>Everything</filterScope>
         <label>All Active Scratch Orgs</label>
@@ -161,6 +161,6 @@
         <fullName>My_Active_Scratch_Orgs</fullName>
         <filterScope>Mine</filterScope>
         <label>My Active Scratch Orgs</label>
-    </listViews>
+    </listViews>-->
     <sharingModel>Private</sharingModel>
 </CustomObject>

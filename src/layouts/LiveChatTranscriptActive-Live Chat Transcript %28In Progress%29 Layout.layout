@@ -40,7 +40,6 @@
                 </sidebarComponents>
                 <style>Stack</style>
                 <unit>Pixel</unit>
-                <width>340</width>
             </containers>
         </primaryTabComponents>
     </customConsoleComponents>
