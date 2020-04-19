@@ -1,0 +1,12 @@
+<apex:page Standardcontroller="Account">
+<apex:form >
+    <apex:pageBlock title="Contacts">
+        <apex:pageblockSection >
+            <apex:outputfield value="{!Account.Name}" />
+        </apex:pageblockSection>
+        <apex:pageblockbuttons >
+            <apex:commandButton action="{!save}" value="Save"/>
+        </apex:pageblockbuttons>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

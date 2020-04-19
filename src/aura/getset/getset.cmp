@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:attribute name="GetLabel1" type="String" />
+    <lightning:button aura:id="Button" label="Button 1" />
+    <lightning:button label="Get Label" onclick="{!c.getLabel}"/>
+    {!v.GetLabel1}
+</aura:component>

@@ -1,0 +1,17 @@
+<apex:page standardController="Contact" extensions="ContactWizardController">
+    <apex:form >
+        <apex:pageBlock title="Contact Additional Information">
+            T1: {!t1} <br />
+            T2: {!t2} <br />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Prev" action="{!navigateToAddressInformationPage}"/>
+                <apex:commandButton value="Finish" action="{! save}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection >
+                <apex:inputField value="{!Contact.Languages__c}"/>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,4 @@
+<aura:component extensible="true">
+    <aura:attribute name="description" type="String" default="Super Description"/>
+    <p>Super Component Description :- Super Description</p>
+</aura:component>

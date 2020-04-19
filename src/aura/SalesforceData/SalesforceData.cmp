@@ -1,0 +1,7 @@
+<aura:component >
+	<lightning:recordForm
+    	recordId="0017F00000fFLuKQAW"
+		objectApiName="Account"
+        layoutType="Compact"
+        columns="2"/>
+</aura:component>

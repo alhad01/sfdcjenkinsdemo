@@ -1,0 +1,10 @@
+<apex:page >
+    <apex:pageBlock >
+        <apex:pageBlockSection title="Outer" collapsible="false" >
+            <apex:pageblockSection title="Inner" columns="3">
+                {!$User.FirstName & ' ' & $User.LastName}
+                {! IF(CONTAINS('salesforce.com','force'),'YES','No')}
+            </apex:pageblockSection>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

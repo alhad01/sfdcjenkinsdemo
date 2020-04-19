@@ -1,0 +1,20 @@
+<apex:page controller="ContactSearchController">
+    <apex:form >
+        <apex:pageBlock title="Contact Search page">
+            
+            <apex:pageBlockSection title="Search String" >
+                <apex:inputText label="Search Text" value="{! searchText}"/>
+                <apex:commandButton value="Search" action="{! doSearch}" reRender="rs"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Search Result" id="rs">
+                <apex:pageBlockTable value="{!conList}" var="con">
+                    <apex:column value="{! con.FirstName}"/>
+                    <apex:column value="{! con.LastName}"/>
+                    <apex:column value="{! con.Email}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

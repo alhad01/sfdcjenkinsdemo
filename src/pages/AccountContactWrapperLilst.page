@@ -1,0 +1,22 @@
+<apex:page controller="AccountRelatedContactsList">
+    <apex:form >
+    	<apex:pageBlock >
+        	<apex:pageBlockSection title="Account and its related Contact" collapsible="true">
+            	<apex:pageBlockTable value="{!AccConList}" var="accon" id="table" title="All Accounts">
+                    <apex:column value="{!accon.acc.Name}" />
+                    <apex:column value="{!accon.acc.Phone}" />
+                    <apex:column value="{!accon.acc.BillingState}" />
+                    <apex:column value="{!accon.acc.Website}" />
+                    
+                    <apex:column breakBefore="false" colspan="2">
+                        <apex:pageBlockTable value="{!accon.con}" var="c">
+                            <apex:column value="{!c.Id}"/>
+ 							<apex:column value="{!c.Name}"/>
+                        </apex:pageBlockTable>                    
+                    </apex:column>
+                    
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

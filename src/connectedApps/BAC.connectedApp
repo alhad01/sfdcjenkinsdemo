@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>alhad01@gmail.com</contactEmail>
+    <label>BAC</label>
+    <oauthConfig>
+        <callbackUrl>https://test.salesforce.com/</callbackUrl>
+        <consumerKey>3MVG9d8..z.hDcPLgDNpXTDW0gJZmNH_sfMyiLUHlVEgmjEs7J_.eq.7I8RkcrRQAV7VV7t_dea5DNMatEeEv</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>

@@ -1,0 +1,28 @@
+<apex:page controller="AccountSelectList">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!processSelectedAccount}" title="Select Account" value="click" rerender="t2"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection >
+
+                <apex:pageBlockTable value="{!accWrapper}" var="a" title="All Accounts" id="table">
+                    <apex:column >
+                        <apex:inputCheckbox value="{!a.selected}" />
+                    </apex:column>
+                    <Apex:column value="{!a.acc.name}" />
+                    <Apex:column value="{!a.acc.phone}" />
+                    <Apex:column value="{!a.acc.billingstate}" />
+                </apex:pageBlockTable>
+                
+                <apex:pageBlockTable value="{!selectedAccounts}" var="sa" title="Selected Accounts" id="t2">
+                    <Apex:column value="{!sa.name}" />
+                    <Apex:column value="{!sa.phone}" />
+                    <Apex:column value="{!sa.billingstate}" />
+                </apex:pageBlockTable>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

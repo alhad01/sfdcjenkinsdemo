@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>DeliveryInstallationStatus__c</fieldName>
+    <masterLabel>Primary Sales Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>ExpectedRevenue</fieldNames>
+        <fieldNames>MainCompetitors__c</fieldNames>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>OwnerId</fieldNames>
+        <info>&lt;p&gt;Completed&lt;/p&gt;</info>
+        <picklistValueName>Completed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>DeliveryInstallationStatus__c</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <info>&lt;p&gt;Sales Path Example&lt;/p&gt;</info>
+        <picklistValueName>In progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CurrentGenerators__c</fieldNames>
+        <info>&lt;p&gt;Yet to begin&lt;/p&gt;</info>
+        <picklistValueName>Yet to begin</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

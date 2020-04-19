@@ -1,0 +1,7 @@
+<aura:component controller="LoadOpportunity">
+    <aura:attribute name="opp" type="Opportunity[]" />
+    <lightning:button label="Get Opportunity" onclick="{!c.getOpportunity}" />
+    <aura:iteration var="opty" items="v.opp">
+        <p>{!opty.Name}</p>
+    </aura:iteration>
+</aura:component>

@@ -1,0 +1,4 @@
+<aura:component extends="c:super">
+    <aura:attribute name="subdescription" type="String" default="Sub Description"/>
+    <p>Sub Component Description:- {!v.description}</p>
+</aura:component>

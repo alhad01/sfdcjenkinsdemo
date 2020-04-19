@@ -1,0 +1,29 @@
+<apex:page controller="AccountRelatedContactOppList">
+    <apex:form >
+        	<apex:pageBlock >
+            	<apex:pageBlockSection title="Account its Related Contact and Opportunity" collapsible="true">
+                	<apex:pageBlockTable value="{!accConOppList}" var="accConOpp" id="table" title="All Accounts" >
+                    	<apex:column value="{!accConOpp.acc.Name}"/>
+                        <apex:column value="{!accConOpp.acc.Phone}" />
+                        <apex:column value="{!accConOpp.acc.BillingState}" />
+                        <apex:column value="{!accConOpp.acc.Website}" />
+                        
+                        <apex:column breakBefore="false" colspan="2" title="Contacts">
+                            <apex:pageBlockTable value="{!accConOpp.con}" var="c">
+                                <apex:column value="{!c.Id}"/>
+                                <apex:column value="{!c.Name}"/>
+                            </apex:pageBlockTable>    
+                        </apex:column>
+                        
+                        <apex:column breakBefore="false" colspan="3" title="Opportunities">
+                            <apex:pageBlockTable value="{!accConOpp.opp}" var="o">
+                                <apex:column value="{!o.Name}"/>
+                                <apex:column value="{!o.StageName}"/>
+                            </apex:pageBlockTable>  
+                        </apex:column>
+                        
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+    </apex:form>
+</apex:page>
